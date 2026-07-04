@@ -15,3 +15,4 @@ How to get it yourself:
 
 
 Their are some parameters you can change in the main.py file and if you remove the hashes near the end, it saves all the frames.
+(You must create a folder called frames in the same folder if you want to save it. Also saving is slow)
