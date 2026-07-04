@@ -44,17 +44,15 @@ prog["resolution"] = (WIDTH, HEIGHT)
 running = True
 x=0.6
 y=0
-a=0
 glow=(-0.5,0.5)
 while running:
     prog["r_offset"] = (x, y)
-    #prog["circle"] = glow
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
     x-=y/5000
     y+=x/5000
-    #ctx.clear()
+    ctx.clear()
     vao.render(moderngl.TRIANGLE_STRIP)
     #data = ctx.screen.read(components=3)
     #surface = pygame.image.fromstring(data, (WIDTH, HEIGHT), "RGB", True)
